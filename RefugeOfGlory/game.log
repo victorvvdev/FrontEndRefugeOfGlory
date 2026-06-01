@@ -1,0 +1,176 @@
+Mae 31, 2026 10:05:09 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 10:05:11 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 10:05:11 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 10:05:11 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 10:05:11 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 10:05:11 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 10:05:12 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen REGISTER because there is no screen with the specified name.
+Mae 31, 2026 12:27:36 G.M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.dialogs" is null
+	at IntroNarrativeScreen.renderDialogBox(IntroNarrativeScreen.java:206)
+	at IntroNarrativeScreen.render(IntroNarrativeScreen.java:198)
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.renderScreen(RenderComponent.java:217)
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.renderGraphics(RenderComponent.java:170)
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:148)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:93)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Mae 31, 2026 12:42:31 G.M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+java.lang.StringIndexOutOfBoundsException: Index 249 out of bounds for length 249
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.lang.String.checkIndex(String.java:4904)
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:45)
+	at java.base/java.lang.String.charAt(String.java:1624)
+	at IntroNarrativeScreen$1.run(IntroNarrativeScreen.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:572)
+	at java.base/java.util.TimerThread.run(Timer.java:522)
+
+Mae 31, 2026 4:45:56 G.M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+de.gurkenlabs.litiengine.resources.ResourceLoadException: javax.imageio.IIOException: Can't get input stream from URL!
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1756)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:284)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:202)
+	at BattleScreen.prepare(BattleScreen.java:78)
+	at de.gurkenlabs.litiengine.gui.screens.ScreenManager.display(ScreenManager.java:133)
+	at de.gurkenlabs.litiengine.gui.screens.ScreenManager.display(ScreenManager.java:173)
+	at VNTransitionScreen.finishScene(VNTransitionScreen.java:222)
+	at VNTransitionScreen.advanceDialog(VNTransitionScreen.java:212)
+	at VNTransitionScreen.lambda$setupInput$2(VNTransitionScreen.java:154)
+	at de.gurkenlabs.litiengine.input.Mouse.mouseClicked(Mouse.java:161)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6579)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: javax.imageio.IIOException: Can't get input stream from URL!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1363)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:46)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:13)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:443)
+	... 22 more
+Caused by: java.io.FileNotFoundException: C:\Users\victo\OneDrive\Documentos\Projeto Proj Arq Sist\RefugeOfGlory\Cenários\BatalhaFundo.png (O sistema não pode encontrar o caminho especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:183)
+	at java.base/java.net.URL.openStream(URL.java:1263)
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1361)
+	... 25 more
+
+Mae 31, 2026 4:50:20 G.M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+de.gurkenlabs.litiengine.resources.ResourceLoadException: javax.imageio.IIOException: Can't get input stream from URL!
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1756)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:284)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:202)
+	at BattleScreen.prepare(BattleScreen.java:78)
+	at de.gurkenlabs.litiengine.gui.screens.ScreenManager.display(ScreenManager.java:133)
+	at de.gurkenlabs.litiengine.gui.screens.ScreenManager.display(ScreenManager.java:173)
+	at VNTransitionScreen.finishScene(VNTransitionScreen.java:222)
+	at VNTransitionScreen.advanceDialog(VNTransitionScreen.java:212)
+	at VNTransitionScreen.lambda$setupInput$2(VNTransitionScreen.java:154)
+	at de.gurkenlabs.litiengine.input.Mouse.mouseClicked(Mouse.java:161)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6579)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: javax.imageio.IIOException: Can't get input stream from URL!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1363)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:46)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:13)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:443)
+	... 22 more
+Caused by: java.io.FileNotFoundException: C:\Users\victo\OneDrive\Documentos\Projeto Proj Arq Sist\RefugeOfGlory\Cenários\BatalhaFundo.png (O sistema não pode encontrar o caminho especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:183)
+	at java.base/java.net.URL.openStream(URL.java:1263)
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1361)
+	... 25 more
+
+Mezh. 01, 2026 12:59:16 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen VN_POST_BATTLE_2 because there is no screen with the specified name.
+Mezh. 01, 2026 12:59:17 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen VN_POST_BATTLE_2 because there is no screen with the specified name.
+Mezh. 01, 2026 12:59:18 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen VN_POST_BATTLE_2 because there is no screen with the specified name.
+Mezh. 01, 2026 1:05:38 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen VN_POST_BATTLE_2 because there is no screen with the specified name.
+Mezh. 01, 2026 1:05:38 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen VN_POST_BATTLE_2 because there is no screen with the specified name.
+Mezh. 01, 2026 2:37:09 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen VN_TRANSITION because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:30 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:33 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:35 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:35 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:36 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:36 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:36 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:36 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:41:36 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:42:54 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:42:54 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:42:55 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:42:55 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:58:22 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:58:25 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:58:26 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:58:26 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
+Mezh. 01, 2026 2:58:26 A.M. de.gurkenlabs.litiengine.gui.screens.ScreenManager display
+WARNING: Could not display the screen INTRO_NARRATIVE because there is no screen with the specified name.
